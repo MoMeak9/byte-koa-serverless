@@ -1,4 +1,5 @@
 import {Context} from "koa";
+import Mock from "mockjs"
 
 export default class UserServices {
     /**
@@ -8,12 +9,12 @@ export default class UserServices {
      */
 
     public static async login(ctx: Context) {
-        ctx.status = 200
         ctx.body = {
             code: 1,
-            data: {
-                id: 'test'
-            }
+            data: Mock.mock({
+                userName: '@name',
+                date:'@date("yyyy-MM-dd")'
+            })
         }
     }
 }
