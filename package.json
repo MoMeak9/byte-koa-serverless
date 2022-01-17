@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/app.js",
-    "dev": "nodemon --watch src -e ts,tsx --exec ts-node src/index.ts",
+    "dev": "nodemon --watch src -e ts,tsx --exec ts-node src/app.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "yugasun",
@@ -25,17 +25,19 @@
     "koa-static": "^5.0.0",
     "koa2-cors": "^2.0.6",
     "koa2-swagger-ui": "^5.3.0",
-    "mockjs": "^1.1.0"
+    "mockjs": "^1.1.0",
+    "swagger-jsdoc": "^6.1.0"
   },
   "devDependencies": {
     "@types/ip": "^1.1.0",
     "@types/koa": "^2.13.3",
-    "@types/mockjs": "^1.0.6",
     "@types/koa-bodyparser": "^4.3.1",
     "@types/koa-mount": "^4.0.0",
     "@types/koa-router": "^7.4.2",
     "@types/koa-static": "^4.0.1",
     "@types/koa2-cors": "^2.0.1",
+    "@types/mockjs": "^1.0.6",
+    "@types/swagger-jsdoc": "^6.0.1",
     "nodemon": "^2.0.15",
     "ts-node": "^10.4.0",
     "typescript": "^4.5.4"
