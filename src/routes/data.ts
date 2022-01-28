@@ -7,7 +7,7 @@ const routerInit = new Router({prefix: '/data'})
  * @swagger
  * /data/getTimePerformance:
  *   get:
- *     description: 性能耗时数据模拟
+ *     description: 性能耗时数据模拟(多组)
  *     tags: [性能数据展示]
  *     responses:
  *       200:
