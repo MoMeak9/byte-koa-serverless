@@ -10,7 +10,7 @@ const swaggerDefinition = {
         version: '1.0.0', // Version (required)
         description: '字节前端训练营进阶班项目Mock.js数据模拟', // Description (optional)
     },
-    host: `http://${AddressIp.address()}:${PORT}`, // Host (optional)
+    host: `${AddressIp.address()}:${PORT}`, // Host (optional)
     basePath: '/', // Base path (optional)
 }
 
