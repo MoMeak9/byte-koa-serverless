@@ -27,33 +27,6 @@ const routerInit = new Router({prefix: '/user'})
  *         description: 成功
  *         schema:
  *           type: object
- *           properties:
- *             id:
- *               type: number
- *               title: id
- *             userName:
- *               type: string
- *               title: 用户名
- *             name:
- *               type: string
- *               title: 昵称
- *             email:
- *               type: string
- *               title: 邮箱
- *             phone:
- *               type: number
- *               title: 手机号
- *             accessToken:
- *               type: string
- *               title: sso的token
- *             authToken:
- *               type: string
- *               title: 账号系统的token
- *             menus:
- *               type: array
- *               items:
- *                   $ref: '#/definitions/UserModel1'
- *
  */
 
 routerInit.post('/login', UserService.login)

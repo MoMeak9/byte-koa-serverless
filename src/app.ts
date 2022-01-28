@@ -5,6 +5,7 @@ import AddressIP from 'ip'
 // import KoaBody from 'koa-body'
 import {corsHandler} from './middlewares/cors'
 import User from './routes/user'
+import Data from "./routes/data";
 import Swagger from './routes/swagger'
 import {koaSwagger} from 'koa2-swagger-ui'
 import {PORT} from './config/constant'
@@ -32,6 +33,7 @@ app.use(
 
 // 路由
 app.use(User.routes()).use(User.allowedMethods())
+app.use(Data.routes()).use(Data.allowedMethods())
 app.use(Swagger.routes()).use(Swagger.allowedMethods())
 
 app.listen(PORT, () => {
