@@ -1,7 +1,5 @@
 import path from 'path'
 import swaggerJSDoc from 'swagger-jsdoc'
-import AddressIp from 'ip'
-import {PORT} from '../../config/constant'
 
 const swaggerDefinition = {
     info: {
@@ -16,7 +14,8 @@ const swaggerDefinition = {
 
 const options = {
     swaggerDefinition,
-    apis: [path.join(__dirname, '../../routes/*.js')], // all api
+    apis: [path.join(__dirname, '../../routes/*.js'),
+        path.join(__dirname, '../../routes/*.ts'),], // all api
 }
 
 const jsonSpc = swaggerJSDoc(options)
