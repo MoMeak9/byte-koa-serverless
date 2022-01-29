@@ -1,6 +1,7 @@
 import {Context} from "koa";
 import Mock from "mockjs";
 import {getGrade} from "../utils/getGrade";
+import {equipments} from "../utils/baseTypes";
 
 export default class DataServices {
     /**
@@ -11,6 +12,9 @@ export default class DataServices {
 
     public static async getPerformanceDataOfTime(ctx: Context) {
         let res = Mock.mock({
+            // "array|1": [
+            //     ...equipments
+            // ],
             timePerformanceList: [
                 {
                     label: 'First Contentful Paint',
